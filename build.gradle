@@ -1,0 +1,34 @@
+plugins {
+    id 'java'
+    id 'war'
+}
+
+group = 'jstree'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '19'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    //서블릿
+    implementation 'jakarta.servlet:jakarta.servlet-api:6.0.0'
+    providedRuntime 'org.apache.tomcat.embed:tomcat-embed-jasper'
+    compileOnly 'org.projectlombok:lombok:1.18.26'
+    implementation 'jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api' //스프링부트 3.0 이상
+    implementation group: 'com.zaxxer', name: 'HikariCP', version: '5.0.1'
+    runtimeOnly 'com.oracle.database.jdbc:ojdbc8'
+
+
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
+
+//war 풀기,인텔리j무료버전 필요
+task explodeWar(type:Copy){
+    into "$buildDir/exploded"
+    with war
+}

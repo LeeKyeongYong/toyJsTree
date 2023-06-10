@@ -36,9 +36,3 @@ out/
 
 ### VS Code ###
 .vscode/
-
-gradle/
-settings.gradle
-gradlew.bat
-gradlew
-build.gradle

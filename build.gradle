@@ -14,13 +14,28 @@ repositories {
 dependencies {
     //서블릿
     implementation 'jakarta.servlet:jakarta.servlet-api:6.0.0'
-    providedRuntime 'org.apache.tomcat.embed:tomcat-embed-jasper'
-    compileOnly 'org.projectlombok:lombok:1.18.26'
-    implementation 'jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api' //스프링부트 3.0 이상
-    implementation group: 'com.zaxxer', name: 'HikariCP', version: '5.0.1'
-    runtimeOnly 'com.oracle.database.jdbc:ojdbc8'
+    compileOnly 'org.projectlombok:lombok:1.18.26'//lombock
+    implementation group: 'com.zaxxer', name: 'HikariCP', version: '5.0.1'//hikaricp
+    compileOnly group: 'jakarta.servlet.jsp', name: 'jakarta.servlet.jsp-api', version: '3.1.1' //jsp
+    implementation group: 'com.oracle.database.jdbc', name: 'ojdbc8', version: '12.2.0.1'//oracle
+    compileOnly group: 'jakarta.platform', name: 'jakarta.jakartaee-web-api', version: '10.0.0'//api
+    compileOnly group: 'jakarta.websocket', name: 'jakarta.websocket-client-api', version: '2.1.0'//websocket
+    implementation group: 'jakarta.json.bind', name: 'jakarta.json.bind-api', version: '3.0.0'//json
+    compileOnly group: 'jakarta.servlet.jsp', name: 'jakarta.servlet.jsp-api', version: '3.1.1'//server-api
+    implementation group: 'jakarta.resource', name: 'jakarta.resource-api', version: '2.1.0'//resource-api
+    implementation group: 'jakarta.el', name: 'jakarta.el-api', version: '5.0.1'//el-api
+    implementation group: 'jakarta.transaction', name: 'jakarta.transaction-api', version: '2.0.1'//트랜잭션
+    implementation group: 'org.glassfish.web', name: 'jakarta.servlet.jsp.jstl', version: '2.0.0'//jstl
+    implementation group: 'jakarta.servlet.jsp.jstl', name: 'jakarta.servlet.jsp.jstl-api', version: '3.0.0'
 
+    //apche poi
+    implementation 'org.apache.poi:poi:5.2.3'
+    implementation 'org.apache.poi:poi-ooxml:5.2.3'
 
+    //pdf
+    implementation 'com.itextpdf:itextpdf:5.5.13.3'
+    implementation 'com.itextpdf:xmlworker:5.5.13.3'
+    implementation 'com.itextpdf:pdfa:7.2.3'
 }
 
 tasks.named('test') {

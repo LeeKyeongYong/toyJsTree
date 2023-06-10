@@ -34,8 +34,15 @@ dependencies {
 
     //pdf
     implementation 'com.itextpdf:itextpdf:5.5.13.3'
-    implementation 'com.itextpdf:xmlworker:5.5.13.3'
+    implementation 'com.itextpdf.tool:xmlworker:5.5.13.3'
     implementation 'com.itextpdf:pdfa:7.2.3'
+
+    //파일업로드
+    // Commons FileUpload
+    implementation 'commons-fileupload:commons-fileupload:1.4'
+    // Commons IO
+    implementation 'commons-io:commons-io:2.11.0'
+
 }
 
 tasks.named('test') {

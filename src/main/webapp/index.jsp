@@ -15,9 +15,7 @@
 <body>
 <div id="wrapper">
         <div id="header">
-                <div id="header_inner">
-                   <center>로고 이미지 들어가는 헤더 영역 (980 x 180)</center>
-                </div>
+            <%@include file="/include/header.jspf"%>
         </div>
         <div id="middle">
             <div id="sidebar">

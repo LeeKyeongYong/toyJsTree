@@ -43,6 +43,10 @@ dependencies {
     // Commons IO
     implementation 'commons-io:commons-io:2.11.0'
 
+    //gson
+    implementation group: 'com.google.code.gson', name: 'gson', version: '2.10.1'
+
+
 }
 
 tasks.named('test') {

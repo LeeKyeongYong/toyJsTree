@@ -6,17 +6,14 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@include file="/include/headlib.jspf"%>
 <html>
 <head>
     <title>jstree테스트</title>
+    <%@include file="/include/script.jspf"%>
 </head>
 <body>
-        jsTree테스트입니다.
-        ${sessionScope.id}<br/>
-        ${4/3}<br/>
-        <c:set var="contextPath" value="${pageContext.request.contextPath}"/>
-        <c:out value="${contextPath}"/><br/>
-        ${pageContext.request.contextPath}
+    <%@include file="/include/contentBody.jspf"%>
+    <%@include file="/include/footer.jspf"%>
 </body>
 </html>

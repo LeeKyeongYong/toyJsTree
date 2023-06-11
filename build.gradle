@@ -28,24 +28,14 @@ dependencies {
     implementation group: 'org.glassfish.web', name: 'jakarta.servlet.jsp.jstl', version: '2.0.0'//jstl
     implementation group: 'jakarta.servlet.jsp.jstl', name: 'jakarta.servlet.jsp.jstl-api', version: '3.0.0'
     testImplementation group: 'binaryage', name: 'devtools', version: '1.0.7'
-    //apche poi
-    implementation 'org.apache.poi:poi:5.2.3'
-    implementation 'org.apache.poi:poi-ooxml:5.2.3'
-
-    //pdf
-    implementation 'com.itextpdf:itextpdf:5.5.13.3'
-    implementation 'com.itextpdf.tool:xmlworker:5.5.13.3'
-    implementation 'com.itextpdf:pdfa:7.2.3'
-
-    //파일업로드
-    // Commons FileUpload
-    implementation 'commons-fileupload:commons-fileupload:1.4'
-    // Commons IO
-    implementation 'commons-io:commons-io:2.11.0'
-
-    //gson
-    implementation group: 'com.google.code.gson', name: 'gson', version: '2.10.1'
-
+    implementation 'org.apache.poi:poi:5.2.3'//apche poi
+    implementation 'org.apache.poi:poi-ooxml:5.2.3'//apche poi
+    implementation 'com.itextpdf:itextpdf:5.5.13.3'//pdf
+    implementation 'com.itextpdf.tool:xmlworker:5.5.13.3'//pdf
+    implementation 'com.itextpdf:pdfa:7.2.3'//pdf
+    implementation 'commons-fileupload:commons-fileupload:1.4'    // Commons FileUpload
+    implementation 'commons-io:commons-io:2.11.0'  // Commons IO
+    implementation group: 'com.google.code.gson', name: 'gson', version: '2.10.1'    //gson
 
 }
 

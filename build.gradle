@@ -27,7 +27,7 @@ dependencies {
     implementation group: 'jakarta.transaction', name: 'jakarta.transaction-api', version: '2.0.1'//트랜잭션
     implementation group: 'org.glassfish.web', name: 'jakarta.servlet.jsp.jstl', version: '2.0.0'//jstl
     implementation group: 'jakarta.servlet.jsp.jstl', name: 'jakarta.servlet.jsp.jstl-api', version: '3.0.0'
-
+    testImplementation group: 'binaryage', name: 'devtools', version: '1.0.7'
     //apche poi
     implementation 'org.apache.poi:poi:5.2.3'
     implementation 'org.apache.poi:poi-ooxml:5.2.3'

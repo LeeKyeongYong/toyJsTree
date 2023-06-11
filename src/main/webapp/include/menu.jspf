@@ -1,0 +1,10 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<div id="sidebar_inner">
+    <h3>관련 링크</h3>
+    <ul>
+        <li><a href="#">링크 1</a></li>
+        <li><a href="#">링크 2</a></li>
+        <li><a href="#">링크 3</a></li>
+        <li><a href="#">링크 4</a></li>
+    </ul>
+</div>

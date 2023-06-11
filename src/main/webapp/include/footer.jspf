@@ -1,2 +1,4 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-footer입니다.
+    <div id="footer_inner">
+        &copy; 2023 궁금하면500원<br/>All rights reserved.
+    </div>
